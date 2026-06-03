@@ -1,38 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <!-- CSS de Bootstrap oficial -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Estilo para que las fotos queden redondas e idénticas */
         .rounded-circle {
-            width: 60px;
-            height: 60px;
+            width: 65px;
+            height: 65px;
             object-fit: cover;
+            border: 3px solid white;
         }
     </style>
 </head>
 <body class="bg-light">
 
-    <!-- Contenedor principal centrado -->
     <main class="container d-flex align-items-center justify-content-center min-vh-100 py-4">
-        <!-- El g-3 le da el espacio exacto entre las tarjetas como el profe -->
         <div class="row w-100 g-3">
             
-            <!-- ====== COLUMNA IZQUIERDA (Ocupa 9 espacios) ====== -->
+            <!-- ====== COLUMNA IZQUIERDA ====== -->
             <div class="col-12 col-lg-9">
                 <div class="row g-3">
                     
-                    <!-- Tarjeta Verde: Mercedes Sosa (col-lg-8) -->
+                    <!-- Mercedes Sosa (Album: Cantora) -->
                     <div class="col-12 col-lg-8">
-                        <div class="card h-100 bg-success text-white border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div class="card h-100 bg-success text-white border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="d-flex mb-3 align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=150" class="border border-white border-2 rounded-circle" alt="Mercedes Sosa">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Mercedes_Sosa_Cantora.jpg" class="rounded-circle" alt="Cantora">
                                     <div class="ps-3">
                                         <h6 class="m-0 fw-bold">Mercedes Sosa</h6>
                                         <small class="text-white-50">5to B - Fleitas Dahyana</small>
@@ -43,13 +39,12 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta Azul: Duki (col-lg-4) -->
+                    <!-- Duki (Album: Desde el Fin del Mundo) -->
                     <div class="col-12 col-lg-4">
-                        <div class="card h-100 bg-primary text-white border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div class="card h-100 bg-primary text-white border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="d-flex mb-3 align-items-center">
-                                    <!-- Foto de Duki corregida con enlace directo -->
-                                    <img src="https://i.ibb.co/L8N8Xf3/duki.jpg" class="border border-white border-2 rounded-circle" alt="Duki">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Duki_-_Desde_el_Fin_del_Mundo.png" class="rounded-circle" alt="Desde el Fin del Mundo">
                                     <div class="ps-3">
                                         <h6 class="m-0 fw-bold">Duki</h6>
                                         <small class="text-white-50">5to B - Fleitas Dahyana</small>
@@ -60,12 +55,12 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta Amarilla: Charly García (col-lg-4) -->
+                    <!-- Charly García (Album: Clics Modernos) -->
                     <div class="col-12 col-lg-4">
-                        <div class="card h-100 bg-warning text-dark border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div class="card h-100 bg-warning text-dark border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="d-flex mb-3 align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=150" class="border border-dark border-2 rounded-circle" alt="Charly García">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Charly_Garcia_-_Clics_Modernos.jpg" class="rounded-circle" alt="Clics Modernos">
                                     <div class="ps-3">
                                         <h6 class="m-0 fw-bold">Charly García</h6>
                                         <small class="text-muted">5to B - Fleitas Dahyana</small>
@@ -76,12 +71,12 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta Roja: Trueno (col-lg-8) -->
+                    <!-- Trueno (Album: Atrevido) -->
                     <div class="col-12 col-lg-8">
-                        <div class="card h-100 bg-danger text-white border-0 shadow-sm d-flex flex-column justify-content-between">
+                        <div class="card h-100 bg-danger text-white border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="d-flex mb-3 align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=150" class="border border-white border-2 rounded-circle" alt="Trueno">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Trueno_-_Atrevido.png" class="rounded-circle" alt="Atrevido">
                                     <div class="ps-3">
                                         <h6 class="m-0 fw-bold">Trueno</h6>
                                         <small class="text-white-50">5to B - Fleitas Dahyana</small>
@@ -95,13 +90,13 @@
                 </div>
             </div>
 
-            <!-- ====== COLUMNA DERECHA (Ocupa 3 espacios) ====== -->
-            <!-- Tarjeta Gris: Soda Stereo (col-lg-3) -->
+            <!-- ====== COLUMNA DERECHA ====== -->
+            <!-- Soda Stereo (Album: Canción Animal) -->
             <div class="col-12 col-lg-3">
-                <div class="card h-100 bg-secondary text-white border-0 shadow-sm d-flex flex-column justify-content-between">
+                <div class="card h-100 bg-secondary text-white border-0 shadow-sm">
                     <div class="card-body">
                         <div class="d-flex mb-3 align-items-center">
-                            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=150" class="border border-white border-2 rounded-circle" alt="Soda Stereo">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Soda_Stereo_Cancion_Animal.jpg" class="rounded-circle" alt="Canción Animal">
                             <div class="ps-3">
                                 <h6 class="m-0 fw-bold">Soda Stereo</h6>
                                 <small class="text-white-50">5to B - Fleitas Dahyana</small>
