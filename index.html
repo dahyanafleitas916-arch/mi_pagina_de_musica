@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Música Argentina - Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
         body {
@@ -15,73 +17,73 @@
             width: 60px;
             height: 60px;
             object-fit: cover;
+            border-radius: 50%;
             border: 2px solid white;
         }
-        .custom-box {
+        /* Color azul personalizado para tus tarjetas */
+        .tarjeta-azul {
+            background-color: #0d6efd;
             color: white;
-            border-radius: 4px;
-            padding: 20px;
-            height: 100%;
+            border: none;
+            border-radius: 10px;
         }
-        .box-green { background-color: #198754; }
-        .box-blue { background-color: #0d6efd; }
-        .box-grey { background-color: #6c757d; }
-        .box-yellow { background-color: #ffc107; color: #000; }
-        .box-red { background-color: #dc3545; }
     </style>
 </head>
 <body>
 
-    <div class="container my-4">
-        <div class="row g-3">
-            
-            <div class="col-md-9">
-                
-                <div class="row g-3 mb-3">
-                    <div class="col-md-8">
-                        <div class="custom-box box-green">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=150" class="avatar-img rounded-circle me-3" alt="Charly">
-                                <div>
-                                    <h5 class="mb-0 fw-bold">Charly García</h5>
-                                    <small>El más Grande del Rock</small>
-                                </div>
-                            </div>
-                            <p>Carlos Alberto García es uno de los músicos más influyentes del rock latinoamericano. Fundador de bandas icónicas como Sui Generis y Serú Girán, revolucionó la producción musical y la composición con su oído absoluto.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="custom-box box-blue">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=150" class="avatar-img rounded-circle me-3" alt="Cerati">
-                                <div>
-                                    <h5 class="mb-0 fw-bold">Gustavo Cerati</h5>
-                                    <small>Líder de Soda Stereo</small>
-                                </div>
-                            </div>
-                            <p>Cantautor y productor, logró reconocimiento internacional por ser el líder de la banda Soda Stereo. Su genialidad en la guitarra y letras transformaron el pop-rock.</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <h1 class="text-center mb-5">Mi Página de Música Argentina</h1>
 
-                <div class="row g-3">
-                    <div class="col-md-5">
-                        <div class="custom-box box-yellow">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=150" class="avatar-img rounded-circle me-3" alt="Mercedes">
-                                <div>
-                                    <h5 class="mb-0 fw-bold">Mercedes Sosa</h5>
-                                    <small>La Voz de América</small>
-                                </div>
-                            </div>
-                            <p>La mayor exponente del folklore argentino y fundadora del Movimiento del Nuevo Cancionero. Llevó la música popular e identitaria a los escenarios más importantes del mundo.</p>
+        <!-- PROFE: Acá empieza la fila para ordenar en cuadritos -->
+        <div class="row g-4">
+
+            <!-- TARJETA 1: Mercedes Sosa -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-azul p-3 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=150" class="avatar-img me-3" alt="Mercedes Sosa">
+                        <div>
+                            <h5 class="mb-0">Mercedes Sosa</h5>
+                            <small>5to B - Fleitas Dahyana</small>
                         </div>
                     </div>
-                    
-                    <div class="col-md-7">
-                        <div class="custom-box box-red">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=150" class="avatar-img rounded-circle me-3" alt="Duki">
-                                <div>
-                                    <h5 class="mb-0 fw-bold">Duki</h5>
+                    <p class="card-text">Fue una de las mayores exponentes del folklore argentino y de la música popular de América Latina, fundadora del Movimiento del Nuevo Cancionero y una voz que trascendió fronteras.</p>
+                </div>
+            </div>
+
+            <!-- TARJETA 2: Duki -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-azul p-3 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Foto de micrófono de perfil para Duki -->
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=150" class="avatar-img me-3" alt="Duki">
+                        <div>
+                            <h5 class="mb-0">Duki</h5>
+                            <small>5to B - Fleitas Dahyana</small>
+                        </div>
+                    </div>
+                    <p class="card-text">Es uno de los máximos referentes del trap argentino y de la música urbana actual. Surgido de las batallas de freestyle de El Quinto Escalón, logró revolucionar la escena y llenar estadios enteros.</p>
+                </div>
+            </div>
+
+            <!-- TARJETA 3: Charly García -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-azul p-3 h-100">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=150" class="avatar-img me-3" alt="Charly García">
+                        <div>
+                            <h5 class="mb-0">Charly García</h5>
+                            <small>5to B - Fleitas Dahyana</small>
+                        </div>
+                    </div>
+                    <p class="card-text">Ícono absoluto del rock nacional argentino, fundó bandas históricas como Sui Generis y Serú Girán antes de lanzar una enorme carrera como solista que cambió la música del país para siempre.</p>
+                </div>
+            </div>
+
+        </div> <!-- Cierre de la fila general -->
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
